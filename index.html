@@ -23,15 +23,37 @@
       margin: 0 
     }
 
+    div.nextGameWrapper {
+      border: solid 1px #eee;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      background-color: #ccc;
+      color: #003E7C;
+    }
+    .nextGameAway, .nextGameHome {
+      padding: 10px;
+    }
+ .nextGamePrediction {
+   font-size: 44px;
+   font-weight: 700;
+   text-align:center;
+ }
+
   </style>
   </head>
   <body>
     <div>
-      <h1>NO!</h1>
+      <h1>Will the Leafs Win Tonight?</h1>
+      <p>Our AI-powered prediction system analyzes multiple data points to make a determination of the most likely outcome for the next Toronto Maple Leafs game.</p>
       <div>
-        <h3>Next Game</h3>
+        <h3>Next Game:</h3>
+        <div class="nextGameWrapper">
         <div class="nextGameDate"></div>
-        <div class="nextGameAway"></div>at<div class="nextGameHome"></div>
+        <div class="nextGameAway"></div>@<div class="nextGameHome"></div>
+        </div>
+        <h3>Our Prediction:</h3>
+        <div class="nextGamePrediction">NO</div>
       </div>
     </div>
     
