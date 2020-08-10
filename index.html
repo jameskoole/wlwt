@@ -10,6 +10,10 @@
       color: #ffffff;
       width: 600px;
       margin: auto;
+      background-image: url('bg_logo.png');
+      background-repeat: no-repeat;
+      background-position: top center;
+      margin-top: 50px;
     }
 
     div.mid {
@@ -23,27 +27,40 @@
       margin: 0 
     }
 
-    div.nextGameWrapper {
+    .mainContent, .nextGameWrapper, .nextGamePrediction {
       border: solid 1px #eee;
       border-radius: 10px;
-      padding: 10px;
+      padding: 30px;
       text-align: center;
       background-color: #ccc;
       color: #003E7C;
+      box-shadow: 0px 0px 16px 0px rgba(255,255,255,0.75);
+    }
+
+    .mainContent {
+      opacity: 90%;
     }
     .nextGameAway, .nextGameHome {
       padding: 10px;
+    }
+
+    .nextGameWrapper
+    {
+      width: 70%;
+   margin: 0 auto;
     }
  .nextGamePrediction {
    font-size: 44px;
    font-weight: 700;
    text-align:center;
+   width: 70%;
+   margin: 0 auto;
  }
 
   </style>
   </head>
   <body>
-    <div>
+    <div class="mainContent">
       <h1>Will the Leafs Win Tonight?</h1>
       <p>Our AI-powered prediction system analyzes multiple data points to make a determination of the most likely outcome for the next Toronto Maple Leafs game.</p>
       <div>
