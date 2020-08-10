@@ -9,5 +9,7 @@ $(document).ready(function() {
 		$("div.nextGameDate").html(moment(nextGame.date).format('LL'));
 		$("div.nextGameHome").html(nextGame.games[0].teams.home.team.name);
 		$("div.nextGameAway").html(nextGame.games[0].teams.away.team.name);
+		
+		$("div.nextGameScore").html(nextGame.games[0].teams.away.score + " - " + nextGame.games[0].teams.home.score);
 	});    
 });
